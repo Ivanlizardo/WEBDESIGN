@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="resmenu.css" />
+    <link rel="stylesheet" href="resReset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <style>
+      span.material-symbols-outlined {
+        font-size: 32px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <span class="material-symbols-outlined">menu</span>
+      </label>
+
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <span class="material-symbols-outlined">close</span>
+        </label>
+
+        <a href="#" class="home-link">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+    <section></section>
+  </body>
+</html>

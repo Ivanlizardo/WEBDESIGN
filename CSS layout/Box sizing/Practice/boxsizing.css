@@ -1,0 +1,32 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box1 {
+  /*  Default  */
+  box-sizing: content-box;
+  width: 700px;
+  height: 300px;
+  background-color: lightblue;
+}
+
+.box2 {
+  /*  Border-box  */
+  box-sizing: border-box;
+  width: 700px;
+  height: 300px;
+  background-color: lightblue;
+}
+
+#box {
+  padding: 50px;
+  border: 10px solid black;
+  font-size: 10em;
+  color: white;
+  background-color: lightblue;
+  text-align: center;
+}

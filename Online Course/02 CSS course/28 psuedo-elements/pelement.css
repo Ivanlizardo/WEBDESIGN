@@ -1,0 +1,47 @@
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color: yellow;
+}
+
+p::selection{
+    color: rgb(10, 223, 3);
+    background-color: rgb(29, 29, 29);
+}
+
+/*
+#fruit li::before{
+     content: "✔️";   windows +  ;   =    emoji  
+}
+*/
+
+#apple::after{
+    content: "🍎";
+}
+
+#orange::after{
+    content: "🍊";
+}
+
+#banana::after{
+    content: "🍌";
+}
+
+#fruit li::marker{
+    content: "✔️";
+}
+
+#bird::before {
+    content: "";
+    display: inline-block;       /* ➤ makes it behave like an image */
+    width: 20px;                 /* ➤ set image width */
+    height: 20px;                /* ➤ set image height */
+    background-image: url('download.png');
+    background-size: cover;      /* ➤ scales image properly */
+    background-repeat: no-repeat;
+    margin-right: 5px;           /* ➤ space between image & text */
+    vertical-align: middle;
+}

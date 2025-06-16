@@ -1,0 +1,32 @@
+#box {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  font-size: 13em;
+  text-align: center;
+  animation-name: slideleft;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+#box:hover {
+  animation-name: slidedown;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  cursor: pointer;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateX(0) rotate(0deg);
+    transition: all 1s ease-in-out;
+  }
+  to {
+    transform: translateX(100px) rotate(360deg);
+    background-color: blue;
+    border-radius: 50%;
+    font-size: 5em;
+    color: white;
+    transition: all 1s ease-in-out;
+  }
+}

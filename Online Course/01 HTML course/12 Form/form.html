@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= bgbt t5yh , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--method = post (SENSITIVE)-->
+    <!--method = get (not SENSITIVE)-->
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <label for="username">Username</label>
+        <input placeholder="Chafterchess" name="" id="username" required minlength="3"><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="" id="password" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="juan@gmail.com"><br>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" placeholder="+63 929-123-1234" pattern="[0-9]{3}-[0-9]{3}"><br>
+
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity">quantity:</label>
+        <input type="number" name="" id="quantity" min="0"><br>
+
+        <label for="title">title:</label>
+        <label for="Mr">Mr</label>
+        <input type="radio" id="Mr" value="Mr" name="group">
+        <label for="Ms">Ms</label>
+        <input type="radio" id="Ms" value="Ms" name="group">
+        <label for="Phd">Phd</label>
+        <input type="radio" id="Phd" value="Phd" name="group"><br>
+
+        <label for="payment">payment</label>
+        <select name="" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Giftcard</option>
+        </select><br>
+
+        <label for="subs">subscribe:</label>
+        <input type="checkbox" name="" id="subs"><br>
+
+        <label for="comment">comment</label>
+        <textarea name="" id="comment" row="3" cols="25"></textarea><br>
+
+        <label for="file">File: </label>
+        <input type="file" id="file" accept="application/pdf">
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+</body>
+</html>

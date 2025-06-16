@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  /* border: 1px green solid; */
+}
+
+/* Header */
+header {
+  background-color: rgba(128, 128, 128, 0.322);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  height: 100%;
+  width: 100%;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li button {
+  padding: 0.5rem;
+  border-radius: 5%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+
+  cursor: pointer;
+}
+
+/*  Section  */
+
+section {
+  /* border: 2px green solid; */
+  height: 90vh;
+  overflow-x: hidden;
+
+  display: flex;
+  position: relative;
+
+  overflow: hidden;
+}
+
+section .box {
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  /* border: 2px green solid; */
+  width: 50%;
+  transition: 1s linear;
+}
+
+section #right-side {
+  background: linear-gradient(to right, #00ffff, #8a2be2);
+}
+
+/* Button */
+
+#active-right {
+  display: none;
+}
+
+#active-right-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: 1s linear;
+}
+
+#circle-right {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+
+  background-color: rgb(255, 255, 255);
+  transition: 1s linear;
+}
+
+#active-right:checked ~ .box {
+  top: 50%;
+  left: 75%; /* Move left */
+  transform: translate(-50%, -50%);
+}
+
+#active-right:checked ~ .box {
+  top: 50%;
+  left: 75%; /* Move left */
+  transform: translate(-50%, -50%);
+}
+
+#active-right:checked ~ #active-right-btn {
+  left: 100%;
+  opacity: 0;
+}
+
+#active-right:checked ~ #circle-right {
+  left: 100%;
+  opacity: 0;
+}
+/* -----------left----------- */
+#circle-left {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+
+  background-color: rgb(255, 255, 255);
+  transition: 1s linear;
+
+  opacity: 0;
+}
+
+#active-left-btn {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: 1s linear;
+  opacity: 0;
+}
+
+#active-left {
+  display: none;
+}
+
+#active-right:checked ~ #active-left-btn {
+  left: 50%;
+  opacity: 1;
+}
+
+#active-right:checked ~ #circle-left {
+  opacity: 1;
+  left: 50%;
+}
+
+/* Login area */
+
+.login-area {
+  height: 90vh;
+  width: 50%;
+  /* border: 1px solid black; */
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  margin-left: auto;
+  transition: 1.4s ease-in-out;
+}
+
+#logo-area {
+  /* border: 1px solid black; */
+  height: 30%;
+  width: 100%;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  h1 {
+    font-size: 3rem;
+    color: black;
+  }
+}
+
+#input-area {
+  /* border: 1px solid black; */
+  height: 60%;
+  width: 100%;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 40px;
+}
+
+#input-area .username {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#input-username {
+  width: 80%;
+  border: none;
+}
+
+.username::after {
+  content: "";
+  position: absolute;
+  width: 37rem;
+  height: 0.1rem;
+  bottom: 0;
+  left: 46px;
+  background-color: rgb(142, 141, 141);
+}
+
+span#account-circle {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+#input-area .password {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#input-password {
+  width: 80%;
+  border: none;
+}
+
+.password::after {
+  content: "";
+  position: absolute;
+  width: 37rem;
+  height: 0.1rem;
+  bottom: 0;
+  left: 46px;
+  background-color: rgb(142, 141, 141);
+}
+
+span#password-circle {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+#input-area .login-bottom {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-bottom h3 {
+  display: flex;
+  align-items: center;
+}
+
+.login-bottom button {
+  padding: 1rem;
+  border: none;
+  background: linear-gradient(to right, #00ffff, #8a2be2);
+  color: white;
+  border-radius: 10px;
+}
+
+/* Social Area */
+
+#social-area {
+  height: 10vh;
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(99, 98, 98, 0.173);
+}
+
+.social-logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#active-right:checked ~ .login-area {
+  top: 100%;
+  /* opacity: 0; */
+}

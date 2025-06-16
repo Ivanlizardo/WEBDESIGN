@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="temperature.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="menu">
+          <div id="firstSection"><h1>Enter Temperature</h1></div>
+          <div id="secondSection">
+            <div id="secondSection_1">
+              <h2 class="innerText">Degree</h2>
+              <input type="text" id="myInput" placeholder="0" />
+            </div>
+            <div id="secondSection_2">
+              <h2 class="innerText">Convert In</h2>
+              <div class="innerChoice">
+                <div>
+                  <label for="myFarenheit">Farenheit</label>
+                  <input type="radio" id="myFarenheit" name="convert" />
+                </div>
+                <div>
+                  <label for="myCelsius">Celsius</label>
+                  <input type="radio" id="myCelsius" name="convert" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="thirdSection"><button id="mySubmit">Convert</button></div>
+        </div>
+        <div class="result">
+          <h2 id="resultUnit">°C</h2>
+          <h1 id="result">0.00</h1>
+        </div>
+      </div>
+    </section>
+    <script src="temperature.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+#h1{
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(255, 0, 115);
+}
+
+#h2{
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h3{
+    border-style: dashed;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h4{
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h5{
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h6{
+    border: 90px;
+    border-style: ridge;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h7{
+    border: 90px;
+    border-style: inset;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}
+
+#h8{
+    border: 90px;
+    border-style: outset;
+    border-radius: 10px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    padding: 15px; /* Adds space inside the border */
+}

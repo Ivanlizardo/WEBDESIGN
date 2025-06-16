@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px greenyellow solid;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+header {
+  height: 10vh;
+  background-color: rgb(43, 43, 43);
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+header .navbar ul a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+section {
+  height: 90vh;
+  padding: 0 5%;
+  background-color: rgb(193, 193, 193);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .box {
+  height: 20rem;
+  width: 20rem;
+  background-color: antiquewhite;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .box h1 {
+  color: black;
+}
+
+footer {
+  height: 20vh;
+  background-color: rgb(43, 43, 43);
+}
+
+/* Dropwdown */
+
+.dropdown {
+  height: 5.5rem;
+  width: 5.4rem;
+
+  right: 4rem;
+
+  display: none;
+  position: absolute;
+}
+
+/* Responsiveness */
+
+@media (max-width: 800px) {
+  .section {
+    height: 120vh;
+    justify-content: center;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  header .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  header .dropdown button {
+    color: black;
+    padding: 20%;
+    cursor: pointer;
+  }
+
+  header .dropdown ul {
+    list-style: none;
+    position: absolute;
+    top: 4.3rem;
+    left: 0.3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    display: none;
+  }
+
+  header .dropdown ul li {
+    width: 100%;
+    padding: 1rem; /* Bigger padding */
+    text-align: center; /* Center the text horizontally */
+  }
+
+  header .dropdown ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header .dropdown:hover ul {
+    display: block;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px greenyellow solid;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: aliceblue;
+  }
+
+  header {
+    height: 10vh;
+    background-color: rgb(43, 43, 43);
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  header #logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  header .navbar ul a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  section {
+    height: 90vh;
+    padding: 0 5%;
+    background-color: rgb(193, 193, 193);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section .box {
+    height: 20rem;
+    width: 20rem;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .box h1 {
+    color: black;
+  }
+
+  footer {
+    height: 20vh;
+    background-color: rgb(43, 43, 43);
+  }
+
+  /* Dropwdown */
+
+  .dropdown {
+    height: 5.5rem;
+    width: 5.4rem;
+
+    right: 4rem;
+
+    display: none;
+    position: absolute;
+  }
+
+  /* Responsiveness */
+
+  @media (max-width: 800px) {
+    .section {
+      height: 120vh;
+      justify-content: center;
+    }
+
+    header .navbar {
+      display: none;
+    }
+
+    header .dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    header .dropdown button {
+      color: black;
+      padding: 20%;
+      cursor: pointer;
+    }
+
+    header .dropdown ul {
+      list-style: none;
+      position: absolute;
+      top: 4.3rem;
+      left: 0.3rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: bisque;
+      display: none;
+    }
+
+    header .dropdown ul li {
+      width: 100%;
+      padding: 1rem; /* Bigger padding */
+      text-align: center; /* Center the text horizontally */
+    }
+
+    header .dropdown ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    header .dropdown:hover ul {
+      display: block;
+    }
+
+    header .dropdown ul li:hover {
+      background-color: rgb(155, 141, 124); /* Hover effect on each menu item */
+    }
+
+    header .dropdown ul li a:hover {
+      color: white; /* Optional: change text color when hovered */
+    }
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loginopage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <style>
+      span.material-symbols-outlined {
+        font-size: 80px;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/6d2c6b1595.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h3>Logo</h3></div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li>
+            <a href="#"><button>Login</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <input type="checkbox" id="active-right" />
+      <label for="active-right" id="active-right-btn">
+        <span class="material-symbols-outlined"> chevron_right </span>
+      </label>
+
+      <input type="checkbox" id="active-right" />
+      <label for="active-right" id="active-left-btn">
+        <span class="material-symbols-outlined"> chevron_left </span>
+      </label>
+
+      <div class="circle" id="circle-right"></div>
+      <div class="circle" id="circle-left"></div>
+      <div class="box" id="right-side"></div>
+
+      <div class="login-area">
+        <div id="logo-area">
+          <h1>Login</h1>
+        </div>
+        <div id="input-area">
+          <div class="username">
+            <label for="input-username">
+              <span class="material-symbols-outlined" id="account-circle">
+                account_circle
+              </span>
+            </label>
+            <input type="text" placeholder="E-mail" id="input-username" />
+          </div>
+          <div class="password">
+            <label for="input-password">
+              <span class="material-symbols-outlined" id="password-circle">
+                lock
+              </span>
+            </label>
+            <input type="password" placeholder="Password" id="input-password" />
+          </div>
+          <div class="login-bottom">
+            <h3>Forgot Password?</h3>
+            <button>Login</button>
+          </div>
+        </div>
+        <div id="social-area">
+          <h3>Or Login with</h3>
+          <div class="social-logo">
+            <i class="fa-brands fa-google fa-xl"></i>Google
+          </div>
+          <div class="social-logo">
+            <i
+              class="fa-brands fa-square-facebook fa-xl"
+              style="color: #74c0fc"
+            ></i
+            >Facebook
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

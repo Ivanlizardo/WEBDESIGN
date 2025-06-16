@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px dashed hotpink;
+  font-family: Montserrat;
+}
+
+header {
+  padding: 1rem 2rem;
+  min-height: 80px;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .middle-section {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .middle-section ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .navbar .middle-section ul li {
+  font-size: 1.5rem;
+}
+
+header .navbar .last-section {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .last-section button {
+  padding: 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(255, 131, 152);
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+header .navbar .last-section button:hover {
+  box-shadow: 0 0 10px 4px #f54865;
+}
+
+section {
+  height: 87vh;
+  background-color: rgb(173, 173, 173);
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .middle-section ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .last-section button {
+    width: 100%;
+    padding: 1rem;
+  }
+}

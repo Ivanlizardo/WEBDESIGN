@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.header-content {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 5%;
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+#navbar li a {
+  padding: 0px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 5%;
+}
+
+.herosection {
+  height: 95vh;
+  background-color: #cecece;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 5%;
+}
+
+#maintext {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#maintext h1 {
+  font-size: 88px;
+  margin: 0;
+}
+
+.buttons {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between buttons */
+  align-items: left;
+}
+
+#primary-btn {
+  padding: 5px;
+  width: 50%;
+  height: 70px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#secondary-btn {
+  padding: 5px;
+  width: 50%;
+  height: 70px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.img {
+  grid-column-start: 4;
+  grid-column-end: 7;
+
+  grid-row-start: 1;
+  grid-row-end: 7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+}
+
+#no_img {
+  height: 20%;
+}
+
+.section2 {
+  height: 200vh;
+  background-color: #ffffff;
+}
+
+.section2title {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5%;
+}
+
+.section2title h2 {
+  display: inline-block; /* ensures ::after works properly */
+  position: relative; /* Needed to position the underline relative to the text */
+}
+
+.section2title h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* space between text and underline */
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+}
+
+.subtitle {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.subtitle h3 {
+  text-align: center;
+  padding-top: 3%; /* Try 1% or 0% */
+  font-size: 3em;
+}
+
+.smallerText {
+  text-align: center;
+  padding-bottom: 1%;
+  padding-right: 61%;
+  font-size: 1.5em;
+}
+
+.cardsrow1 {
+  height: 36%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2% 15%;
+  padding-top: 0%;
+  gap: 2%;
+}
+
+.cardsrow1 #cardsrow1_1 {
+  border: 2px solid black;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cardsrow1 #cardsrow1_2 {
+  border: 2px solid black;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cardsrow1 #cardsrow1_3 {
+  border: 2px solid black;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cards {
+  border: 2px solid black;
+  height: 55%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 1.3em;
+  padding-right: 64%;
+}
+
+.cardDescription p {
+  padding: 4%;
+}
+
+.price {
+  padding-top: 6%;
+  padding-left: 2%;
+}
+
+footer {
+  height: 100px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+footer #diamond {
+  height: 50px;
+  width: 50px;
+  rotate: 45deg;
+  background-color: #333;
+  position: absolute;
+  top: -25px;
+  left: 8%;
+}

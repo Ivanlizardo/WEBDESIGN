@@ -1,0 +1,26 @@
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #ff0303;
+    margin: 2;
+    padding: 7px;
+  }
+
+h1 {
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center;
+  }
+
+.p1{
+    color:aquamarine;
+    padding: 70px;
+
+}
+
+.p2{
+    color:rgb(242, 234, 5);
+    margin: 10px;
+}

@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #363636;
+  color: white;
+}
+
+.header-content {
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+
+#navbar {
+  margin-right: 5%;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 35px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+
+  color: white;
+}
+
+.right-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 35px;
+}
+
+.header-content .logo {
+  padding-right: 7%;
+}
+
+.right-section ul {
+  gap: 20px;
+  cursor: pointer;
+}
+
+.right-section ul li {
+  text-decoration: none;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.right-section ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.herosection {
+  height: 80vh;
+  width: 100%;
+  background-color: #cecece;
+}
+
+.herosection .hero-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0px;
+  height: 100%;
+}
+
+.herosection .hero-content #left-side-content {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-side-content img {
+  max-width: 100%;
+  height: 100px;
+}
+
+.maintext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 48px; /* Change this value to your desired size */
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.herosection .hero-content #right-side-content {
+  width: 30%;
+  height: 100%;
+  background-color: #7c7b7b;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#button1 {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.herosection .hero-content #right-side-content #button1 button {
+  padding: 20px;
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2-title ul {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.section2-title ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.section2-title ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2-cards-selection {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #363636;
+  color: white;
+  padding: 20px;
+  height: 20vh;
+}
+
+.section2-title ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease-in-out;
+  margin: 5px auto 0 auto; /* centers the underline */
+}
+
+.section2-title ul li a:hover::after,
+.section2-title ul li a.active::after {
+  width: 100%;
+}
+
+.cards {
+  background-color: #cecece;
+  width: 25%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 20%;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.cards img {
+  height: 20%;
+}
+
+.card-info {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
+#lower {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.card-info button {
+  background-color: #363636;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  cursor: pointer;
+}
+
+#middle p {
+  font-size: 10px;
+  padding-left: 3%;
+}
+
+#upper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#upper h1 {
+  font-size: 20px;
+}
+
+.section3-title {
+  width: 100%;
+  height: 80px;
+}
+
+.section3-title h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section3-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 700px;
+  gap: 20px;
+}
+
+.section3-body .section3-cards {
+  background-color: #cecece;
+  width: 23%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3-body .section3-cards img {
+  height: 20%;
+}
+
+.section4 {
+  background-color: #cecece;
+  width: 95.4%; /* reduce width so margin has space to show */
+  margin-left: 2.3%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 2%;
+  align-self: center;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.section4 .maincontent {
+  border: 2px solid black;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.section4 .subcontent1 {
+  border: 2px solid black;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.section4 .subcontent2 {
+  border: 2px solid black;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.section4 .maincontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section4 .maincontent .maincontent-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  gap: 20px;
+}
+
+.section4 .maincontent .maincontent-buttons button {
+  background-color: #363636;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.maincontent .maincontent-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.section4 #review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

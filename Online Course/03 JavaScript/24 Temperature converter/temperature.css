@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  /* outline: 1px dashed; */
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .container {
+  width: 80%;
+  height: 50%;
+  border: 5px solid rgb(17, 161, 113);
+  border-radius: 2%;
+
+  display: flex;
+}
+
+section .container .menu,
+section .container .result {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MENU SECTION */
+section .container .menu {
+  justify-content: space-around;
+  padding: 1rem;
+
+  #firstSection {
+    color: rgb(17, 161, 113);
+  }
+
+  #secondSection {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .innerText {
+    font-size: 1.4rem;
+    padding: 1rem 1rem 1rem 0rem;
+    color: rgb(17, 161, 113);
+  }
+
+  #myInput {
+    width: 80%;
+    padding: 1rem 1rem 1rem 0.4rem;
+  }
+
+  #secondSection_2 .innerChoice {
+    display: flex;
+    gap: 0rem 5rem;
+  }
+
+  #thirdSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #thirdSection #mySubmit {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5%;
+    background-color: rgb(17, 161, 113);
+    color: white;
+    transition: all 0.25s ease-in-out;
+  }
+
+  #thirdSection #mySubmit:hover {
+    cursor: pointer;
+    background-color: rgb(13, 122, 86);
+  }
+}
+
+/* RESULT SECTION */
+section .container .result {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 161, 113);
+  color: white;
+  position: relative;
+
+  #resultUnit {
+    position: absolute;
+    inset: 38% 0 0 65%;
+  }
+
+  #result {
+    font-size: 4rem;
+  }
+}

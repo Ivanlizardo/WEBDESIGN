@@ -1,0 +1,22 @@
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    visibility: none;
+}
+
+span{ 
+    background-color: aqua;
+    width: 100px;
+    height: 100px; /* Naging parang div */
+    display: inline-block;
+    margin-left: 0px;
+}
+
+body {
+    background-image: url("pexels-christian-heitz-285904-842711.jpg");
+    background-size: cover;         /* Make it fill the screen */
+    background-repeat: no-repeat;   /* Don't repeat */
+    background-position: center;    /* Center it */
+}

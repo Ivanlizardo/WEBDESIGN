@@ -1,0 +1,15 @@
+/* min width -> Gumagana kapag screen ≥ 500px    |     “Gagana kapag 500px pataas, hanggang full screen.     */
+/* max width -> Gumagana kapag screen ≤ 500px    |     “Gagana kapag 500px pababa, hanggang mobile.”         */
+
+@media (min-width: 500px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    color: blue;
+    font-size: 5rem;
+  }
+}

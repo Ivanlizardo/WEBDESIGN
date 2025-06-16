@@ -1,0 +1,37 @@
+
+#h1 {
+    text-shadow: 10px 3px 10px red, -10px -3px 10px blue;
+    margin-bottom: 20px; 
+}
+
+#box1 {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(155, 155, 156);
+    box-shadow: 3px 3px 5px;
+    border-radius: 20px;
+    border-top-right-radius: 70px;
+    
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+    position: absolute; /* Now it's taken out of the normal flow */
+    top: 80px;           /* adjust this based on your <h1> height */
+    left: 0; 
+
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(44, 44, 219);
+    margin: 50px;
+    border: solid;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+}

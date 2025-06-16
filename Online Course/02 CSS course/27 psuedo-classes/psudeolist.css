@@ -1,0 +1,8 @@
+li:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+li:not(:hover){ /*  Mga hindi hovered  */
+    background-color: grey;
+}

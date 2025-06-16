@@ -1,0 +1,21 @@
+* { /* all elements */
+    box-sizing: border-box;
+}
+
+.box{
+    border: 2px solid;
+    padding: 25px; 
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: aqua;
+    overflow: auto;
+    
+    max-height: 25%;
+}
+
+.container{
+    background-color: antiquewhite;
+    height: 100vh;
+}
