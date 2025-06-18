@@ -20,3 +20,6 @@ function triple(element, index, array){
 function display(element){
     console.log(element);
 }
+
+
+//For updating lang daw
