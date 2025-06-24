@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+:root {
+  --main-color: #ebebeb;
+  --footer-color: #ffffff;
+  --secondary-color: #ff9100;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+img {
+  height: 3rem;
+  aspect-ratio: 1/1;
+}
+
+header {
+  padding: 1rem 2.5rem;
+
+  nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #headerLogo {
+      margin-right: 4.5rem;
+    }
+
+    .leftside_Nav ul {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+
+      li a {
+        text-decoration: none;
+        position: relative;
+      }
+    }
+    .leftside_Nav li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0%;
+      background-color: var(--secondary-color);
+      transition: width 0.3s ease-in-out;
+    }
+
+    .leftside_Nav li a:hover::after {
+      width: 100%;
+    }
+
+    .rightside_Nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      #search {
+        height: 80%;
+        display: flex;
+        align-items: center;
+        background-color: var(--footer-color);
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        input {
+          border: none;
+        }
+
+        #searchContainer {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background-color: black;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .fa-solid.fa-magnifying-glass {
+            color: white;
+          }
+        }
+      }
+
+      #cart {
+        height: 80%;
+        width: 4rem;
+        border-radius: 15px;
+        background-color: var(--footer-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .fa-solid.fa-cart-shopping {
+          font-size: 1.3rem;
+        }
+      }
+
+      #cart:hover {
+        background-color: #ffffffcd;
+      }
+
+      #cart:active {
+        scale: 0.96;
+      }
+
+      #cart::after {
+        content: "2";
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        inset: -20% 0 0 75%;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        line-height: 1;
+        text-align: center;
+        padding: 0;
+
+        color: #ebebeb;
+      }
+    }
+  }
+}
+
+#herosection {
+  height: 90svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+#section2 {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid;
+}
+
+#section3 {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 2rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--footer-color);
+  gap: 2rem;
+
+  .upperSection {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .middle1 {
+    display: flex;
+    gap: 2rem;
+
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    p:active {
+      color: var(--secondary-color);
+    }
+  }
+
+  .middle2 {
+    display: flex;
+    gap: 2rem;
+
+    .fa-brands {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .fa-brands:hover {
+      color: var(--secondary-color);
+    }
+
+    .fa-brands:active {
+      scale: 0.9;
+    }
+  }
+
+  .lowerSection {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

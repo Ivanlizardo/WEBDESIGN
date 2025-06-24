@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+:root {
+  --main-color: #2a2b33;
+  --menu-color: #0f1016;
+  --content-color: #232323;
+  --hover-color: #4a4d51;
+  --line-color: #0088a9;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+img {
+  height: 3rem;
+  aspect-ratio: 1/1;
+}
+
+nav {
+  position: fixed;
+  height: 100svh;
+  width: 5rem;
+  background-color: var(--menu-color);
+  overflow: hidden;
+  white-space: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .companyLogo {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1rem 0 0 1rem;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem 2rem 1rem 0;
+      position: relative;
+      span {
+        padding-left: 1.7rem;
+      }
+    }
+
+    #logout {
+      margin-top: auto;
+    }
+    /* outline: 1px solid; */
+  }
+  transition: all 0.25s ease-in-out;
+
+  .menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    height: 3.5rem;
+    width: 0rem;
+    background-color: var(--line-color);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .menu:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+  }
+
+  .menu:hover::after {
+    display: block;
+    width: 0.2rem;
+  }
+
+  .menu:active {
+    background-color: rgb(92, 92, 92);
+  }
+}
+
+nav:hover {
+  width: 14rem;
+}
+
+.section1 {
+  height: 100svh;
+  margin-left: 6.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+
+  #header {
+    border-radius: 30px;
+    width: 100%;
+    height: 10%;
+    background-color: var(--content-color);
+  }
+  #content {
+    width: 100%;
+    height: 88%;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    #left_content {
+      width: 60%;
+      height: 100%;
+
+      #left_content1 {
+        height: 47.5%;
+        background-color: var(--content-color);
+        border-radius: 30px;
+      }
+      #left_content2 {
+        margin-top: 1rem;
+        height: 47.5%;
+        background-color: var(--content-color);
+        border-radius: 30px;
+      }
+    }
+    #right_content {
+      width: 40%;
+      height: 97%;
+      background-color: var(--content-color);
+      border-radius: 30px;
+    }
+  }
+}
+
+.section2 {
+  height: 5svh;
+  margin-left: 6.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+
+  #lineBreak {
+    width: 100%;
+    height: 0.4rem;
+    background-color: var(--content-color);
+    border-radius: 10px;
+  }
+}
+
+footer {
+  height: 20svh;
+  margin-left: 6.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  .rightside {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  #copyrightFooter {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  #contentFooter {
+    display: flex;
+    gap: 2rem;
+
+    p:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  #messageFooter {
+    margin-left: auto;
+  }
+
+  #messageFooter:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
