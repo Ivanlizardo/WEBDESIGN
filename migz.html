@@ -3,20 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="migz.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Features</li>
-          <li>Burat</li>
-          <li>Sherwin</li>
-          <li>Ivan</li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="./assets/img/close.svg"
+              alt="Close Icon"
+              width="26"
+              height="26"
+          /></a>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/Sherwin Logo Black.png"
+              alt="Sherwin logo"
+              class="logo"
+            />
+          </a>
+        </li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="./assets/img/menu.svg"
+              alt="Menu Icon"
+              width="26"
+              height="26"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>About Sherwin</h3>
+          <p>
+            Empowering learners through tech and design. Follow us for
+            tutorials, insights, and community updates.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sherwin. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
